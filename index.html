@@ -1,63 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephanie Ibrahim | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-  
-  <nav class="navbar">
-    <a href="#" class="logo">Portfolio.</a>
-    <ul>
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephanie Ibrahim | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">Portfolio.</a>
+      <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-container">
+        <button id="menu-btn" class="menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
 
-  <div class="bars-animation">
-    <div class="bar" style="--i:6;"></div>
-    <div class="bar" style="--i:5;"></div>
-    <div class="bar" style="--i:4;"></div>
-    <div class="bar" style="--i:3;"></div>
-    <div class="bar" style="--i:2;"></div>
-    <div class="bar" style="--i:1;"></div>
-  </div>
+    <div class="bars-animation">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
+    </div>
 
-  <section class="home">
-    <div class="home-info">
-      <h1>Stephanie Ibrahim</h1>
-      <h2>I'm a 
-        <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
-        <span style="--i:3;" data-text="Backend Developer">Backend Developer</span>
-        <span style="--i:2;" data-text="Full Stack Developer">Full Stack Developer</span>
-        <span style="--i:1;" data-text="Writer">Writer</span>
-      </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est obcaecati nostrum officia nisi dolorum iure maiores. Explicabo, dolores est perspiciatis dolorem consequatur nemo necessitatibus consectetur nisi nostrum vero corporis expedita.
-      </p>
-      <div class="home-btn">
-        <a href="#" class="btn">Download CV</a>
-        <div class="home-socials">
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <section class="home" id="home">
+      <div class="home-info">
+        <h1>Stephanie Ibrahim</h1>
+        <h2>
+          I'm a
+          <span style="--i: 4" data-text="Frontend Developer"
+            >Frontend Developer</span
+          >
+          <span style="--i: 3" data-text="Backend Developer"
+            >Backend Developer</span
+          >
+          <span style="--i: 2" data-text="Full Stack Developer"
+            >Full Stack Developer</span
+          >
+          <span style="--i: 1" data-text="Writer">Writer</span>
+        </h2>
+
+        <div class="home-btn">
+          <a href="#" class="btn">Download CV</a>
+          <div class="home-socials">
+            <a href="https://github.com/Stephanie-ib"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/stephanie-ibrahim-715a4b292/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="home-img">
-      <div class="img-box">
-        <div class="img-item">
-          <img src="./images/profile.png" alt="profile picture">
+
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="./images/profile.png" alt="profile picture" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
+    </section>
+
+    <section id="services" class="service-section">
+      <h2>Services</h2>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Frontend Development</h3>
+          <h4>2024-2025</h4>
+          <p>
+            Frontend developer skilled with building responsive web pages with
+            tools like react, tailwind.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-folder-open"></i>
+          <h3>Open Source Contributor</h3>
+          <h4>2025</h4>
+          <p>
+            Open source contributor who loves to help innovate and improve
+            others developers ideas.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <h3>Instructor</h3>
+          <h4>2025</h4>
+          <p>
+            An instructor in teaching others the basics of how to build web
+            pages.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Recent Projects</h2>
+
+      <div class="slider-container">
+        <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+
+        <div class="projects-slider">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img
+              src="./images/egg timer.png"
+              alt="egg timer"
+              class="project-image"
+            />
+            <h3 class="project-title">Egg Timer</h3>
+            <div class="tech-stack">
+              <p>Html</p>
+              <p>Css</p>
+              <p>Javascript</p>
+            </div>
+            <div class="button-group">
+              <button>
+                <a href="https://egg-timer-flax.vercel.app/" target="_blank"
+                  >Live Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/Stephanie-ib/Egg-Timer"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img
+              src="./images/music-player.png"
+              alt="music player"
+              class="project-image"
+            />
+            <h3 class="project-title">Music Player</h3>
+            <div class="tech-stack">
+              <p>Html</p>
+              <p>Css</p>
+              <p>Javascript</p>
+            </div>
+            <div class="button-group">
+              <button>
+                <a
+                  href="https://music-player-five-lemon.vercel.app/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/ayo-ola0710/Quiz-Game"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <img
+              src="/images/guess game.png"
+              alt="guess game"
+              class="project-image"
+            />
+            <h3 class="project-title">Guess Game</h3>
+            <div class="tech-stack">
+              <p>Html</p>
+              <p>Css</p>
+              <p>JavaScript</p>
+            </div>
+            <div class="button-group">
+              <button>
+                <a href="https://guess-game-ochre.vercel.app/" target="_blank"
+                  >Live Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/Stephanie-ib/Guess-Game"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="/images/rock paper scissors game.png"
+              alt="rock paper scissors"
+              class="project-image"
+            />
+            <h3 class="project-title">Landing Page</h3>
+            <div class="tech-stack">
+              <p>Html</p>
+              <p>Css</p>
+              <p>Javascript</p>
+            </div>
+            <div class="button-group">
+              <button>
+                <a
+                  href="https://rock-paper-scissor-nu-murex.vercel.app/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/Stephanie-ib/rock-paper-scissor"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="/images/rock paper scissors game.png"
+              alt="rock paper scissors"
+              class="project-image"
+            />
+            <h3 class="project-title">Landing Page</h3>
+            <div class="tech-stack">
+              <p>Html</p>
+              <p>Css</p>
+              <p>Javascript</p>
+            </div>
+            <div class="button-group">
+              <button>
+                <a
+                  href="https://rock-paper-scissor-nu-murex.vercel.app/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/Stephanie-ib/rock-paper-scissor"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="/images/rock paper scissors game.png"
+              alt="rock paper scissors"
+              class="project-image"
+            />
+            <h3 class="project-title">Landing Page</h3>
+            <div class="tech-stack">
+              <p>Html</p>
+              <p>Css</p>
+              <p>Javascript</p>
+            </div>
+            <div class="button-group">
+              <button>
+                <a
+                  href="https://rock-paper-scissor-nu-murex.vercel.app/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/Stephanie-ib/rock-paper-scissor"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <button class="slider-btn right" onclick="slideRight()">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer-text">&copy; All Rights Reserved / Ibrahim Stephanie</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
