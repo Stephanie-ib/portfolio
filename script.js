@@ -30,7 +30,7 @@ if(cvBtn){
   cvBtn.addEventListener('click', function (e) {
     e.preventDefault();
     const link = document.createElement('a');
-    link.href = './files/Stephanie_Ibrahim_CV.pdf';
+    link.href = './files/Stephanie-Ibrahim-CV.pdf';
     link.download = 'Stephanie_Ibrahim_CV.pdf';
     link.click();
   });
